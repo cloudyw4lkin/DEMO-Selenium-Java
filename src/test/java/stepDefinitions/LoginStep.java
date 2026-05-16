@@ -11,22 +11,22 @@ public class LoginStep extends BaseStep {
     private final LoginPage loginPage = new LoginPage(super.driver);
 
     @Given("The user navigates to {string}")
-    public void navigateToWebsite(String websiteUrl) {
+    public void theUserNavigatesTo(String websiteUrl) {
         this.loginPage.navigate(websiteUrl);
     }
 
     @When("The user types {string} as username")
-    public void secondThing(String username) {
+    public void theUserTypesUsername(String username) {
         this.loginPage.inputUsername(username);
     }
 
     @And("The user types {string} as password")
-    public void thirdThing(String password) {
+    public void theUserTypesPassword(String password) {
         this.loginPage.inputPassword(password);
     }
 
     @Then("The user clicks login button")
-    public void thirdThing() {
+    public void theUserClicksLoginButton() {
         this.loginPage.clickLoginButton();
     }
 
